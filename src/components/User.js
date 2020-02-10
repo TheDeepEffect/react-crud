@@ -106,7 +106,7 @@ export default class User extends React.Component {
     const sortedUsers = [...this.state.users];
     console.log(sortedUsers)
     return sortedUsers.sort(
-      (a, b) => (a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+      (a, b) => (a[key].toLowerCase() === b[key].toLowerCase() ? 0 : a[key].toLowerCase() > b[key].toLowerCase() ? 1 : -1)
     );
   };
 
