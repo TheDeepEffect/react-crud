@@ -16,3 +16,10 @@
 .err{
   border: 0.2vh solid red !important ;
 }
+.updateButton{
+  padding: 2vh;
+  position: relative;
+  display: inline;
+  left: 50vw;
+
+}
